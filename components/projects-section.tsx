@@ -1,4 +1,5 @@
-import { ExternalLink, Github, Users, TrendingUp } from "lucide-react"
+// import { ExternalLink, Github, Users, TrendingUp } from "lucide-react"
+import Image from "next/image"
 
 export function ProjectsSection() {
   const projects = [
@@ -144,10 +145,12 @@ export function ProjectsSection() {
                 }`}
               >
                 <div className="relative overflow-hidden">
-                  <img
+                  <Image
+                    width={800}
+                    height={290}
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-48 rounded-tr-md rounded-tl-md object-cover transition-transform duration-300"
                   />
                   {project.featured && (
                     <span className="absolute top-4 left-4 inline-flex items-center rounded-md bg-primary px-2.5 py-0.5 text-xs font-medium text-primary-foreground">

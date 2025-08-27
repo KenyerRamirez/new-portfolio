@@ -36,7 +36,7 @@ export function AboutSection() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                I'm a software engineer with almost 3 years of experience building innovative digital solutions. I specialize in full-stack development with a strong focus on user experience and scalability.
+                {"I'm"} a software engineer with almost 3 years of experience building innovative digital solutions. I specialize in full-stack development with a strong focus on user experience and scalability.
               </p>
 
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">

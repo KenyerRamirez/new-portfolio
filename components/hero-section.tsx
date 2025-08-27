@@ -1,6 +1,7 @@
 "use client"
 
 import { Github, Linkedin, Download } from "lucide-react"
+import Image from "next/image"
 
 export function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -23,7 +24,9 @@ export function HeroSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
           <div className="mb-8">
-            <img
+            <Image
+              width={128}
+              height={128}
               src="/profile-picture.png"
               alt="Foto profesional"
               className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-primary/20"

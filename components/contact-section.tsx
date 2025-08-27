@@ -56,10 +56,10 @@ export function ContactSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-[family-name:var(--font-playfair)]">
-            Let's work together!
+            {"Let's work together!"}
           </h2>
           <p className="text-lg text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
-            Do you have a project in mind? I'd like to listen to your ideas and help you to bring them to life.
+            Do you have a project in mind? {"I'd"} like to listen to your ideas and help you to bring them to life.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -92,7 +92,7 @@ export function ContactSection() {
                 <div className="p-6">
                   <h3 className="font-semibold mb-3">Availability</h3>
                   <p className="text-muted-foreground mb-4">
-                    Currently I'm available for projects and full time opportunities.
+                    Currently {"I'm"} available for projects and full time opportunities.
                   </p>
                   <div className="flex items-center space-x-2">
                     <div className="w-3 h-3 bg-green-500 rounded-full"></div>
@@ -112,7 +112,7 @@ export function ContactSection() {
                   <div className="text-center py-8">
                     <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
                     <h3 className="text-lg font-semibold text-foreground mb-2">Message sent!</h3>
-                    <p className="text-muted-foreground">Thank you for your message, I'll answer you soon.</p>
+                    <p className="text-muted-foreground">Thank you for your message, {"I'll"} answer you soon.</p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-4">
