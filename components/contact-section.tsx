@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { useState } from "react"
-import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react"
+import { Mail, MapPin, Send, CheckCircle } from "lucide-react"
 import emailjs from "@emailjs/browser";
 
 export function ContactSection() {
