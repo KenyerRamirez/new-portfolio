@@ -19,6 +19,7 @@ export function AboutSection() {
     "C#",
     "ASP.NET",
     "Cypress",
+    "Jest",
     "MySQL",
   ]
 
