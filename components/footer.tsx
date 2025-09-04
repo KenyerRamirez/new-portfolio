@@ -31,9 +31,6 @@ export function Footer() {
               >
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="mailto:kenyer_2002@hotmail.com" className="text-muted-foreground hover:text-primary transition-colors">
-                <Mail className="h-5 w-5" />
-              </a>
             </div>
           </div>
 
@@ -87,9 +84,9 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center">
-          <p className="text-muted-foreground flex items-center justify-center">
+          {/* <p className="text-muted-foreground flex items-center justify-center">
             Developed with <Heart className="w-4 h-4 mx-1 text-red-500" /> by me
-          </p>
+          </p> */}
           <p className="text-sm text-muted-foreground mt-2">© 2025 Ramussdev Portfolio.</p>
         </div>
       </div>

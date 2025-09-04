@@ -13,9 +13,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: "Desarrollador Full Stack - Portafolio Profesional",
-  description: "Portafolio profesional de desarrollador con experiencia en tecnologías modernas",
-  generator: "v0.app",
+  title: "Kenyer Ramírez - Portafolio Profesional",
 }
 
 export default function RootLayout({

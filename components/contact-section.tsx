@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { useState } from "react"
-import { Mail, MapPin, Send, CheckCircle } from "lucide-react"
+import { Mail, MapPin, Send, CheckCircle, CircleAlert } from "lucide-react"
 import emailjs from "@emailjs/browser";
 
 export function ContactSection() {
@@ -14,13 +14,26 @@ export function ContactSection() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isTryingSubmitting, setIsTryingSubmitting] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    
+    const DATA_VALIDATION =  formData.user_name.trim() !== "" &&
+                             formData.user_email.trim() !== "" &&
+                             formData.subject.trim() !== "" &&
+                             formData.message.trim() !== "";
+
+    if(!DATA_VALIDATION){
+      setIsSubmitting(false)
+      setIsTryingSubmitting(true)
+      return;
+    }
+
     try {
       const result = await emailjs.send(
-        "service_6z5fibk",
+        "service_ch9i4tc",
         "template_458xqv4",
         {
           user_name: formData.user_name,
@@ -74,7 +87,7 @@ export function ContactSection() {
                     <Mail className="w-5 h-5 text-primary" />
                     <div>
                       <p className="font-medium">Email</p>
-                      <p className="text-muted-foreground">kenyer_2002@hotmail.com</p>
+                      <p className="text-muted-foreground">kenyerramirezu@gmail.com</p>
                     </div>
                   </div>
 
@@ -82,7 +95,7 @@ export function ContactSection() {
                     <MapPin className="w-5 h-5 text-primary" />
                     <div>
                       <p className="font-medium">Location</p>
-                      <p className="text-muted-foreground">Venezuela</p>
+                      <p className="text-muted-foreground">Táchira, Venezuela</p>
                     </div>
                   </div>
                 </div>
@@ -113,6 +126,13 @@ export function ContactSection() {
                     <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
                     <h3 className="text-lg font-semibold text-foreground mb-2">Message sent!</h3>
                     <p className="text-muted-foreground">Thank you for your message, {"I'll"} answer you soon.</p>
+                  </div>
+                ) : isTryingSubmitting ? (
+                  <div className="text-center py-8">
+                    <CircleAlert className="w-16 h-16 text-red-700 mx-auto mb-4"/>
+                    {/* <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" /> */}
+                    <h3 className="text-lg font-semibold text-foreground mb-2">What are you doing?</h3>
+                    <p className="text-muted-foreground">Don't disable the "required" value of the fields. Please reload the page</p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-4">
