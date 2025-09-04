@@ -28,7 +28,7 @@ export function AboutSection() {
   ]
 
   const experienceLevels = [
-    { area: "Frontend Development", level: 5, years: "2+ years" },
+    { area: "Frontend Development", level: 4, years: "2+ years" },
     { area: "Backend Development", level: 4, years: "2+ years" },
     { area: "DevOps & Cloud", level: 2, years: "1+ years" },
     { area: "Mobile Development", level: 4, years: "2+ years" },
