@@ -154,7 +154,7 @@ export function ProjectsSection() {
                   />
                   {project.featured && (
                     <span className="absolute top-4 left-4 inline-flex items-center rounded-md bg-primary px-2.5 py-0.5 text-xs font-medium text-primary-foreground">
-                      Destacado
+                      Featured
                     </span>
                   )}
                 </div>

@@ -70,10 +70,10 @@ export function AboutSection() {
                 <div className="mt-6 space-y-3">
                   <div className="flex justify-between text-sm">
                     <span>Frontend Development</span>
-                    <span className="text-primary">95%</span>
+                    <span className="text-primary">90%</span>
                   </div>
                   <div className="w-full bg-muted rounded-full h-2">
-                    <div className="bg-primary h-2 rounded-full" style={{ width: "95%" }}></div>
+                    <div className="bg-primary h-2 rounded-full" style={{ width: "90%" }}></div>
                   </div>
 
                   <div className="flex justify-between text-sm">
