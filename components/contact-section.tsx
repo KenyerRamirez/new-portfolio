@@ -132,7 +132,7 @@ export function ContactSection() {
                     <CircleAlert className="w-16 h-16 text-red-700 mx-auto mb-4"/>
                     {/* <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" /> */}
                     <h3 className="text-lg font-semibold text-foreground mb-2">What are you doing?</h3>
-                    <p className="text-muted-foreground">Don't disable the "required" value of the fields. Please reload the page</p>
+                    <p className="text-muted-foreground">Don{"'"}t disable the {'"required"'} value of the fields. Please reload the page</p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-4">
