@@ -1,3 +1,5 @@
+import { Star } from "lucide-react"
+
 export function AboutSection() {
   const technologies = [
     "React",
@@ -24,6 +26,22 @@ export function AboutSection() {
     "Agile Methodologies (e.g., Scrum)",
     "Team Leadership",
   ]
+
+  const experienceLevels = [
+    { area: "Frontend Development", level: 5, years: "2+ years" },
+    { area: "Backend Development", level: 4, years: "2+ years" },
+    { area: "DevOps & Cloud", level: 2, years: "1+ years" },
+    { area: "Mobile Development", level: 4, years: "2+ years" },
+  ]
+
+  const renderStars = (level: number) => {
+    return Array.from({ length: 5 }, (_, index) => (
+      <Star
+        key={index}
+        className={`w-4 h-4 ${index < level ? "fill-yellow-400 text-yellow-400" : "fill-gray-200 text-gray-200"}`}
+      />
+    ))
+  }
 
   return (
     <section id="sobre-mi" className="py-20 bg-muted/30">
@@ -67,30 +85,20 @@ export function AboutSection() {
                   ))}
                 </div>
 
-                <div className="mt-6 space-y-3">
-                  <div className="flex justify-between text-sm">
-                    <span>Frontend Development</span>
-                    <span className="text-primary">90%</span>
-                  </div>
-                  <div className="w-full bg-muted rounded-full h-2">
-                    <div className="bg-primary h-2 rounded-full" style={{ width: "90%" }}></div>
-                  </div>
-
-                  <div className="flex justify-between text-sm">
-                    <span>Backend Development</span>
-                    <span className="text-primary">85%</span>
-                  </div>
-                  <div className="w-full bg-muted rounded-full h-2">
-                    <div className="bg-primary h-2 rounded-full" style={{ width: "85%" }}></div>
-                  </div>
-
-                  <div className="flex justify-between text-sm">
-                    <span>DevOps & Cloud</span>
-                    <span className="text-primary">25%</span>
-                  </div>
-                  <div className="w-full bg-muted rounded-full h-2">
-                    <div className="bg-primary h-2 rounded-full" style={{ width: "25%" }}></div>
-                  </div>
+                <div className="mt-6 space-y-4">
+                  <h4 className="text-lg font-medium text-gray-900 mb-3">Experience Level</h4>
+                  {experienceLevels.map((item, index) => (
+                    <div key={index} className="space-y-2">
+                      <div className="flex justify-between items-center">
+                        <span className="text-sm font-medium text-gray-700">{item.area}</span>
+                        <span className="text-xs text-gray-500">{item.years}</span>
+                      </div>
+                      <div className="flex items-center space-x-1">
+                        {renderStars(item.level)}
+                        <span className="ml-2 text-sm text-gray-600">({item.level}/5)</span>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
