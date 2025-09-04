@@ -3,6 +3,8 @@ import { Star } from "lucide-react"
 export function AboutSection() {
   const technologies = [
     "React",
+    "React Native",
+    "Angular",
     "Next.js",
     "TypeScript",
     "Node.js",
@@ -16,7 +18,8 @@ export function AboutSection() {
     "SQL Server",
     "C#",
     "ASP.NET",
-    "Cypress"
+    "Cypress",
+    "MySQL",
   ]
 
   const skills = [
