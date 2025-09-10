@@ -13,7 +13,7 @@ export function HeroSection() {
 
   const handleClickDownload = () => {
     window.location.href =
-      "https://drive.usercontent.google.com/download?id=1Kbgt6ZTVgh4wn36f-Hi7Vj8brb-NejiP&export=download&authuser=0&confirm=t&uuid=c771ea7d-ff8c-4dd3-8ec5-0baa15a9dcac&at=AEz70l6Pw8JpL_tOxEPzb0LspQnP:1741019481787";
+      "https://drive.usercontent.google.com/download?id=1JfGP7qPxx3o9cuYYxgC_xo_27BhL8dVZ&export=download&authuser=0&confirm=t&uuid=10ce29ad-bf42-490f-8632-ddf1ca50aaa0&at=AN8xHoomQBA6oDSWjGw63t5-fokg:1757547715850";
   };
 
   return (
