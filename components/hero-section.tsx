@@ -1,19 +1,19 @@
-"use client"
+"use client";
 
-import { Github, Linkedin, Download } from "lucide-react"
-import Image from "next/image"
+import { Github, Linkedin, Download } from "lucide-react";
+import Image from "next/image";
 
 export function HeroSection() {
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId)
+    const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   const handleClickDownload = () => {
     window.location.href =
-      "https://drive.usercontent.google.com/download?id=1dxc6153u0wdMVGjZVQTF_SOEIaktGfOG&export=download&authuser=0&confirm=t&uuid=b12a4c37-e487-46b6-a903-9feaba55facf&at=AKSUxGOD1UWz_HWVTbTlJydngNCb:1759771562454";
+      "https://drive.usercontent.google.com/download?id=1JfGP7qPxx3o9cuYYxgC_xo_27BhL8dVZ&export=download&authuser=0&confirm=t&uuid=10ce29ad-bf42-490f-8632-ddf1ca50aaa0&at=AN8xHoomQBA6oDSWjGw63t5-fokg:1757547715850";
   };
 
   return (
@@ -39,12 +39,13 @@ export function HeroSection() {
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-            I create exceptional digital experiences using modern technologies, specializing in React, Node.js, .NET, and scalable architectures.
+            I create exceptional digital experiences using modern technologies,
+            specializing in React, Node.js, .NET, and scalable architectures.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <button 
-              onClick={() => scrollToSection("proyectos")} 
+            <button
+              onClick={() => scrollToSection("proyectos")}
               className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 rounded-md text-lg font-medium transition-colors"
             >
               See Projects
@@ -74,12 +75,15 @@ export function HeroSection() {
             >
               <Linkedin className="h-6 w-6" />
             </a>
-            <button className="cursor-pointer text-muted-foreground hover:text-primary transition-colors" onClick={handleClickDownload}>
+            <button
+              className="cursor-pointer text-muted-foreground hover:text-primary transition-colors"
+              onClick={handleClickDownload}
+            >
               <Download className="h-6 w-6" />
             </button>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
