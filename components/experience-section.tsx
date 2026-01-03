@@ -5,10 +5,10 @@ export function ExperienceSection() {
     {
       company: "Banco Sofitasa",
       position: "Full Stack Developer",
-      period: "December 2024 - Present",
+      period: "December 2024 - January 2026",
       location: "In-person -Táchira, Venezuela",
       description:
-        "I develop MVC applications for different bank departments and REST APIs that clients such as Garzón, Speedy, Zebra, and others used to manage their accounts and perform various transactions. Due to my strong performance and contributions, I was moved into the role of API Specialist, where I work with my team to implement security measures and deliver robust solutions.",
+        "I developed MVC applications for different bank departments and REST APIs that clients such as Garzón, Spidi, Zebra, and others used to manage their accounts and perform various transactions. Due to my strong performance and contributions, I was moved into the role of API Specialist, where I worked with my team to implement security measures and deliver robust solutions.",
       technologies: ["React", ".NET", "SQL Server", "C#", "ISS", "JavaScript"],
       achievements: [
         "Accelerated software development timelines by implementing Agile Scrum.",
